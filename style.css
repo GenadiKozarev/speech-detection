@@ -1,7 +1,74 @@
 html {
     font-family: 'Faculty Glyphic', 'Trebuchet MS', Arial, sans-serif;
-    font-size: 13px;
-    color: #fff;
+    font-size: 10px;
     box-sizing: border-box;
-    background: #000000;
+    background: rgb(91, 197, 155);
+}
+
+body {
+    font-size: 2rem;
+}
+
+.wrapper {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.clear-btn {
+    background-color: rgba(255, 44, 44, 0.63); /* Green */
+    border: none;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0.4rem 0.2rem;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    box-shadow: 0 1.2rem 1.6rem 0 rgba(0, 0, 0, 0.24),
+        0 1.7rem 5rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.words {
+    max-width: 50rem;
+    min-width: 50rem;
+    margin: 5rem auto;
+    background: rgb(255, 227, 151);
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 1rem 5rem;
+    background: -webkit-gradient(
+            linear,
+            0 0,
+            0 100%,
+            from(rgb(217, 234, 243)),
+            color-stop(4%, rgb(255, 248, 224))
+        )
+        0 0.4rem;
+    background-size: 100% 3rem;
+    position: relative;
+    line-height: 3rem;
+}
+
+.words:before {
+    content: '';
+    position: absolute;
+    width: 0.4rem;
+    top: 0;
+    left: 3rem;
+    bottom: 0;
+    border: 0.1rem solid;
+    border-color: transparent rgb(239, 228, 228);
+}
+
+p {
+    margin: 0 0 3rem;
 }
